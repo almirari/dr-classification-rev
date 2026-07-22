@@ -1,0 +1,35 @@
+============================================================================
+  Teacher — EfficientNetB3-CORAL  (hybrid resnet50+effnetb3)
+  Notebook   : mkd_hybrid_resnet50_efficientnetb3.ipynb
+  Checkpoint : hyrid_teacher_efficientnet_coral.pth
+============================================================================
+  Architecture : EfficientNetB3  |  Head : CORAL
+
+  Metric              Value
+  --------------------------
+  QWK                0.8735
+  Accuracy           82.83%
+  MAE                0.2343
+  RMSE               0.6220
+  Macro P            0.6913
+  Macro R            0.6380
+  Macro F1           0.6512
+  Wtd P              0.8281
+  Wtd R              0.8283
+  Wtd F1             0.8219
+
+  Efficiency            Value
+  ----------------------------
+  Params (M)           10.698
+  Size (MB)            41.353
+  Latency (ms)         67.739
+  Throughput/s          14.76
+  Peak mem (MB)           nan
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  No DR                      0.9889     0.9834     0.9861      181
+  Mild                       0.5897     0.6216     0.6053       37
+  Moderate                   0.7328     0.8500     0.7870      100
+  Severe                     0.4118     0.3684     0.3889       19
+  Proliferative DR           0.7333     0.3667     0.4889       30

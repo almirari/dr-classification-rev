@@ -1,0 +1,13 @@
+dataset.zip
+_dataset_extracted/
+01_baseline/models/coral
+0_baseline/models/ce
+01_baseline/models/coen
+01_baseline/models/niu
+03_kd_single/models/coral
+03_kd_single/models/ce
+04_kd_multi/models/hybrid_resnet50_effnetb3
+04_kd_multi/models/hybrid_resnet50_resnet50
+04_kd_multi/models/nominal_resnet50_effnetb3
+04_kd_multi/models/ordinal_resnet50_effnetb3
+

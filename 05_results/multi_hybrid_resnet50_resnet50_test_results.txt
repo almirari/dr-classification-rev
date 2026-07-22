@@ -1,0 +1,131 @@
+============================================================================
+  Multi-Teacher KD — Hybrid CA-MKD  (ResNet-50-CE + ResNet-50-CORAL → MobileNetV3-Small)
+  Notebook : mkd_hybrid_resnet50_resnet50.ipynb
+============================================================================
+
+  ── Seed 33  (training best val QWK: 0.8900) ──────────────────────────────
+  Head : CE
+
+  Metric              Value
+  --------------------------
+  QWK                0.8607
+  Accuracy           78.20%
+  MAE                0.2834
+  RMSE               0.6603
+  Macro P            0.6452
+  Macro R            0.6505
+  Macro F1           0.6242
+  Wtd P              0.8039
+  Wtd R              0.7820
+  Wtd F1             0.7822
+
+  Efficiency            Value
+  ----------------------------
+  Params (M)            1.523
+  Size (MB)             5.943
+  Latency (ms)          6.957
+  Throughput/s         143.74
+  Peak mem (MB)           nan
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  No DR                      0.9727     0.9834     0.9780      181
+  Mild                       0.4912     0.7568     0.5957       37
+  Moderate                   0.7407     0.6000     0.6630      100
+  Severe                     0.3548     0.5789     0.4400       19
+  Proliferative DR           0.6667     0.3333     0.4444       30
+
+  ── Seed 81  (training best val QWK: 0.8886) ──────────────────────────────
+  Head : CE
+
+  Metric              Value
+  --------------------------
+  QWK                0.8534
+  Accuracy           78.20%
+  MAE                0.2916
+  RMSE               0.6866
+  Macro P            0.6265
+  Macro R            0.6143
+  Macro F1           0.6143
+  Wtd P              0.7895
+  Wtd R              0.7820
+  Wtd F1             0.7835
+
+  Efficiency            Value
+  ----------------------------
+  Params (M)            1.523
+  Size (MB)             5.943
+  Latency (ms)          6.870
+  Throughput/s         145.56
+  Peak mem (MB)           nan
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  No DR                      0.9779     0.9779     0.9779      181
+  Mild                       0.5476     0.6216     0.5823       37
+  Moderate                   0.6768     0.6700     0.6734      100
+  Severe                     0.2800     0.3684     0.3182       19
+  Proliferative DR           0.6500     0.4333     0.5200       30
+
+  ── Seed 5  (training best val QWK: 0.8983) ───────────────────────────────
+  Head : CE
+
+  Metric              Value
+  --------------------------
+  QWK                0.8533
+  Accuracy           80.38%
+  MAE                0.2670
+  RMSE               0.6685
+  Macro P            0.6579
+  Macro R            0.6260
+  Macro F1           0.6287
+  Wtd P              0.8080
+  Wtd R              0.8038
+  Wtd F1             0.8002
+
+  Efficiency            Value
+  ----------------------------
+  Params (M)            1.523
+  Size (MB)             5.943
+  Latency (ms)          6.908
+  Throughput/s         144.76
+  Peak mem (MB)           nan
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  No DR                      0.9888     0.9779     0.9833      181
+  Mild                       0.5400     0.7297     0.6207       37
+  Moderate                   0.6981     0.7400     0.7184      100
+  Severe                     0.3750     0.3158     0.3429       19
+  Proliferative DR           0.6875     0.3667     0.4783       30
+
+  ── AVERAGED ACROSS 3 SEEDS  (seeds: [33, 81, 5]) ─────────────────────────
+
+  Metric               Mean      ± Std        Min        Max
+  ------------------------------------------------------
+  QWK                0.8558     0.0035     0.8533     0.8607
+  Acc (%)           78.9282     1.0276    78.2016    80.3815
+  MAE                0.2807     0.0102     0.2670     0.2916
+  RMSE               0.6718     0.0110     0.6603     0.6866
+  Macro P            0.6432     0.0129     0.6265     0.6579
+  Macro R            0.6303     0.0151     0.6143     0.6505
+  Macro F1           0.6224     0.0060     0.6143     0.6287
+  Wtd P              0.8005     0.0079     0.7895     0.8080
+  Wtd R              0.7893     0.0103     0.7820     0.8038
+  Wtd F1             0.7886     0.0082     0.7822     0.8002
+
+  Efficiency             Mean        ± Std          Min          Max
+  --------------------------------------------------------------
+  Params (M)           1.5230       0.0000       1.5230       1.5230
+  Size (MB)            5.9434       0.0001       5.9432       5.9435
+  Latency (ms)         6.9117       0.0356       6.8702       6.9571
+  Throughput/s       144.6860       0.7443     143.7389     145.5572
+  Peak mem (MB)           nan          nan          nan          nan
+
+  Class                         Precision           Recall         F1-Score
+  ------------------------------------------------------------------------
+  No DR                  0.9798 ± 0.0067   0.9797 ± 0.0026   0.9798 ± 0.0025
+  Mild                   0.5263 ± 0.0250   0.7027 ± 0.0584   0.5996 ± 0.0159
+  Moderate               0.7052 ± 0.0266   0.6700 ± 0.0572   0.6849 ± 0.0241
+  Severe                 0.3366 ± 0.0409   0.4211 ± 0.1137   0.3670 ± 0.0526
+  Proliferative DR       0.6681 ± 0.0153   0.3778 ± 0.0416   0.4809 ± 0.0309

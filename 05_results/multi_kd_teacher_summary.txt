@@ -1,0 +1,267 @@
+==========================================================================================
+  TEACHER SUMMARY — 04_kd_multi
+==========================================================================================
+
+  ── teacher_nominal_resnet50_ce  (ResNet-50-CE) ───────────────────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8039
+  Accuracy           74.11%
+  MAE                0.3488
+  RMSE               0.7636
+  Macro P            0.5952
+  Macro R            0.5711
+  Macro F1           0.5586
+  Wtd P              0.7622
+  Wtd R              0.7411
+  Wtd F1             0.7398
+
+  Efficiency            Value
+  ----------------------------
+  Params (M)           23.518
+  Size (MB)            90.022
+  Latency (ms)         73.232
+  Throughput/s          13.66
+  Peak mem (MB)           nan
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  No DR                      0.9725     0.9779     0.9752      181
+  Mild                       0.3768     0.7027     0.4906       37
+  Moderate                   0.6429     0.5400     0.5870      100
+  Severe                     0.3684     0.3684     0.3684       19
+  Proliferative DR           0.6154     0.2667     0.3721       30
+
+  ── teacher_nominal_effnetb3_ce  (EfficientNetB3-CE) ──────────────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8562
+  Accuracy           80.11%
+  MAE                0.2698
+  RMSE               0.6664
+  Macro P            0.6749
+  Macro R            0.6411
+  Macro F1           0.6340
+  Wtd P              0.8118
+  Wtd R              0.8011
+  Wtd F1             0.7972
+
+  Efficiency            Value
+  ----------------------------
+  Params (M)           10.704
+  Size (MB)            41.373
+  Latency (ms)         53.127
+  Throughput/s          18.82
+  Peak mem (MB)           nan
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  No DR                      0.9834     0.9834     0.9834      181
+  Mild                       0.5263     0.5405     0.5333       37
+  Moderate                   0.7009     0.7500     0.7246      100
+  Severe                     0.4138     0.6316     0.5000       19
+  Proliferative DR           0.7500     0.3000     0.4286       30
+
+  ── teacher_ordinal_resnet50_coral  (ResNet-50-CORAL) ─────────────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8901
+  Accuracy           79.56%
+  MAE                0.2480
+  RMSE               0.5836
+  Macro P            0.6525
+  Macro R            0.6173
+  Macro F1           0.5942
+  Wtd P              0.8196
+  Wtd R              0.7956
+  Wtd F1             0.7925
+
+  Efficiency            Value
+  ----------------------------
+  Params (M)           23.510
+  Size (MB)            89.993
+  Latency (ms)         90.232
+  Throughput/s          11.08
+  Peak mem (MB)           nan
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  No DR                      0.9944     0.9724     0.9832      181
+  Mild                       0.7188     0.6216     0.6667       37
+  Moderate                   0.7222     0.7800     0.7500      100
+  Severe                     0.2558     0.5789     0.3548       19
+  Proliferative DR           0.5714     0.1333     0.2162       30
+
+  ── teacher_ordinal_effnetb3_coral  (EfficientNetB3-CORAL) ────────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8735
+  Accuracy           82.83%
+  MAE                0.2343
+  RMSE               0.6220
+  Macro P            0.6913
+  Macro R            0.6380
+  Macro F1           0.6512
+  Wtd P              0.8281
+  Wtd R              0.8283
+  Wtd F1             0.8219
+
+  Efficiency            Value
+  ----------------------------
+  Params (M)           10.698
+  Size (MB)            41.353
+  Latency (ms)         50.507
+  Throughput/s          19.80
+  Peak mem (MB)           nan
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  No DR                      0.9889     0.9834     0.9861      181
+  Mild                       0.5897     0.6216     0.6053       37
+  Moderate                   0.7328     0.8500     0.7870      100
+  Severe                     0.4118     0.3684     0.3889       19
+  Proliferative DR           0.7333     0.3667     0.4889       30
+
+  ── teacher_hybrid_re_resnet50_ce  (ResNet-50-CE) ─────────────────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8039
+  Accuracy           74.11%
+  MAE                0.3488
+  RMSE               0.7636
+  Macro P            0.5952
+  Macro R            0.5711
+  Macro F1           0.5586
+  Wtd P              0.7622
+  Wtd R              0.7411
+  Wtd F1             0.7398
+
+  Efficiency            Value
+  ----------------------------
+  Params (M)           23.518
+  Size (MB)            90.024
+  Latency (ms)         83.797
+  Throughput/s          11.93
+  Peak mem (MB)           nan
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  No DR                      0.9725     0.9779     0.9752      181
+  Mild                       0.3768     0.7027     0.4906       37
+  Moderate                   0.6429     0.5400     0.5870      100
+  Severe                     0.3684     0.3684     0.3684       19
+  Proliferative DR           0.6154     0.2667     0.3721       30
+
+  ── teacher_hybrid_re_effnetb3_coral  (EfficientNetB3-CORAL) ──────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8735
+  Accuracy           82.83%
+  MAE                0.2343
+  RMSE               0.6220
+  Macro P            0.6913
+  Macro R            0.6380
+  Macro F1           0.6512
+  Wtd P              0.8281
+  Wtd R              0.8283
+  Wtd F1             0.8219
+
+  Efficiency            Value
+  ----------------------------
+  Params (M)           10.698
+  Size (MB)            41.353
+  Latency (ms)         67.739
+  Throughput/s          14.76
+  Peak mem (MB)           nan
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  No DR                      0.9889     0.9834     0.9861      181
+  Mild                       0.5897     0.6216     0.6053       37
+  Moderate                   0.7328     0.8500     0.7870      100
+  Severe                     0.4118     0.3684     0.3889       19
+  Proliferative DR           0.7333     0.3667     0.4889       30
+
+  ── teacher_hybrid_rr_resnet50_ce  (ResNet-50-CE) ─────────────────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8039
+  Accuracy           74.11%
+  MAE                0.3488
+  RMSE               0.7636
+  Macro P            0.5952
+  Macro R            0.5711
+  Macro F1           0.5586
+  Wtd P              0.7622
+  Wtd R              0.7411
+  Wtd F1             0.7398
+
+  Efficiency            Value
+  ----------------------------
+  Params (M)           23.518
+  Size (MB)            90.024
+  Latency (ms)         87.678
+  Throughput/s          11.41
+  Peak mem (MB)           nan
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  No DR                      0.9725     0.9779     0.9752      181
+  Mild                       0.3768     0.7027     0.4906       37
+  Moderate                   0.6429     0.5400     0.5870      100
+  Severe                     0.3684     0.3684     0.3684       19
+  Proliferative DR           0.6154     0.2667     0.3721       30
+
+  ── teacher_hybrid_rr_resnet50_coral  (ResNet-50-CORAL) ───────────────────────────────────
+
+  Metric              Value
+  --------------------------
+  QWK                0.8901
+  Accuracy           79.56%
+  MAE                0.2480
+  RMSE               0.5836
+  Macro P            0.6525
+  Macro R            0.6173
+  Macro F1           0.5942
+  Wtd P              0.8196
+  Wtd R              0.7956
+  Wtd F1             0.7925
+
+  Efficiency            Value
+  ----------------------------
+  Params (M)           23.510
+  Size (MB)            89.994
+  Latency (ms)         77.047
+  Throughput/s          12.98
+  Peak mem (MB)           nan
+
+  Class                   Precision     Recall   F1-Score  Support
+  --------------------------------------------------------------
+  No DR                      0.9944     0.9724     0.9832      181
+  Mild                       0.7188     0.6216     0.6667       37
+  Moderate                   0.7222     0.7800     0.7500      100
+  Severe                     0.2558     0.5789     0.3548       19
+  Proliferative DR           0.5714     0.1333     0.2162       30
+
+==========================================================================================
+  TEACHER EFFICIENCY RANKING  (by latency, ascending)
+==========================================================================================
+  #   Scenario                          Params(M)   Size(MB)    Lat(ms)    Thr/s    Mem(MB)
+  ------------------------------------------------------------------------------------------
+  1   teacher_ordinal_effnetb3_coral       10.698     41.353     50.507    19.80        nan
+  2   teacher_nominal_effnetb3_ce          10.704     41.373     53.127    18.82        nan
+  3   teacher_hybrid_re_effnetb3_coral     10.698     41.353     67.739    14.76        nan
+  4   teacher_nominal_resnet50_ce          23.518     90.022     73.232    13.66        nan
+  5   teacher_hybrid_rr_resnet50_coral     23.510     89.994     77.047    12.98        nan
+  6   teacher_hybrid_re_resnet50_ce        23.518     90.024     83.797    11.93        nan
+  7   teacher_hybrid_rr_resnet50_ce        23.518     90.024     87.678    11.41        nan
+  8   teacher_ordinal_resnet50_coral       23.510     89.993     90.232    11.08        nan
+
+==========================================================================================
